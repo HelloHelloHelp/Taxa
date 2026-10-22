@@ -7,24 +7,30 @@
 
 <div>
     <label for="km">Distance (km):</label>
-    <input id="km" type="number" step="0.1" @bind="KM" />
+    <input id="km" type="number" step="0.1" min="0.1" @bind="KM" />
 </div>
 
 <div>
-    <label for="when">Hvornår?</label>
-    <input id="when" type="text" @bind="When" />
+    <label for="when">Tidspunkt:</label>
+    <select id="when" @bind="When">
+        <option value="">Vælg tidspunkt</option>
+        @foreach (var tidspunkt in beregning.JsonWhen)
+        {
+            <option value="@tidspunkt">@tidspunkt</option>
+        }
+    </select>
 </div>
 
 <button @onclick="Calculate">Beregn pris</button>
 
 @if (!string.IsNullOrEmpty(ErrorMessage))
 {
-    <p>@ErrorMessage</p>
+    <p style="color: red">@ErrorMessage</p>
 }
 
 @if (!string.IsNullOrEmpty(Result))
 {
-    <p>@Result</p>
+    <p><strong>Resultat:</strong> @Result</p>
 }
 
 <div class="map"></div>

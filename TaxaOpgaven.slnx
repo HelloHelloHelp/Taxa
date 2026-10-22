@@ -1,7 +1,4 @@
 <Solution>
   <Folder Name="/Solution Items/" />
-  <Folder Name="/Solution Items/Calculation/">
-    <Project Path="../TaxaPrisBeregning/TaxaPrisBeregning/TaxaPrisBeregning.csproj" />
-  </Folder>
   <Project Path="TaxaOpgaven/TaxaOpgaven.csproj" />
 </Solution>

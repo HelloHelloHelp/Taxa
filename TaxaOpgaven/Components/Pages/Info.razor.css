@@ -1,0 +1,17 @@
+/* CSS for Info component */
+.infoBoxes {
+    border: 1px black solid;
+    width: 20vw;
+    margin: 0px 70px 0px 140px;
+    padding: 10px;
+}
+
+.allInfoBoxes {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+}
+
+.Titles {
+    text-align: center;
+}

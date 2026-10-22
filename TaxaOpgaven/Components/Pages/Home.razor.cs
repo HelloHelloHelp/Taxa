@@ -1,4 +1,6 @@
 
+using TaxaOpgaven;
+
 namespace TaxaOpgaven.Components.Pages
 {
     public partial class Home
@@ -28,21 +30,17 @@ namespace TaxaOpgaven.Components.Pages
                 return;
             }
 
-            if (beregning.JsonWhen.Contains(When))
+            if (!beregning.JsonWhen.Contains(When))
             {
                 ErrorMessage = "Det valgte tidspunkt er ikke gyldigt.";
                 return;
             }
 
-            Result = $"{beregning.BeregnPris(KM)} kr. " +
-                     $"{beregning.TheMinutes} minutter.";
-        }
-        public double BeregnPris(double theKM)
-        {
-            TheKM = theKM;
-            TheMinutes = theKM * 1.2;
+            beregning.When = When;
 
-            return StartPrice + (TheKM * PerKM) + (TheMinutes * PerMinutes);
+            double pris = beregning.BeregnPris(KM);
+
+          
         }
     }
 }
