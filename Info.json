@@ -1,0 +1,46 @@
+{
+	"Almindelige vogne Dagtimer": {
+		"MinPassagerer": "1",
+		"MaxPassagerer": "4",
+		"Dage": [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ],
+		"Fra": "06:00",
+		"Til": "18:00",
+		"StartPris": "37",
+		"PerKM": "12,75",
+		"PerMin": "5,75"
+	},
+	"Almindelige vogne Aften": {
+		"MinPassagerer": "1",
+		"MaxPassagerer": "4",
+		"Dage": [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" ],
+		"FraMF": "18:00",
+		"TilMF": "06:00",
+		"FraSS": "00:00",
+		"TilSS": "24:00",
+		"StartPris": "47",
+		"PerKM": "16",
+		"PerMin": "7"
+	},
+	"Store vogne Dagtimer": {
+		"MinPassagerer": "5",
+		"MaxPassagerer": "8",
+		"Dage": [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ],
+		"Fra": "06:00",
+		"Til": "18:00",
+		"StartPris": "77",
+		"PerKM": "17",
+		"PerMin": "5,75"
+	},
+	"Store vogne Aften": {
+		"MinPassagerer": "5",
+		"MaxPassagerer": "8",
+		"Dage": [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" ],
+		"FraMF": "18:00",
+		"TilMF": "06:00",
+		"FraSS": "00:00",
+		"TilSS": "24:00",
+		"StartPris": "87",
+		"PerKM": "19",
+		"PerMin": "7"
+	}
+}

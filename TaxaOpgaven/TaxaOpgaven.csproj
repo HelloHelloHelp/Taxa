@@ -7,4 +7,12 @@
     <BlazorDisableThrowNavigationException>true</BlazorDisableThrowNavigationException>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="Calculation\Info.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Calculation\Info.json" />
+  </ItemGroup>
+
 </Project>
