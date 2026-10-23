@@ -1,0 +1,20 @@
+
+.Titles {
+    text-align: center;
+}
+
+#map {
+    width: 95vw;
+    height: 80vh;
+    background-image: url(https://stettbach6.ch/wp-content/uploads/2023/07/neu-1024x589.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #000;
+    z-index: 0;
+}
+
+#backgroundForInD{
+    background: white;
+    width: 19.2vw;
+}
